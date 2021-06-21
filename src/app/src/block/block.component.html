@@ -1,0 +1,18 @@
+<div class="block-item" (window:mouseup)="mouseUp($event)">
+  <div class="block-item__content">
+    <div class="block-item__background block-item__background_hidden">
+      <p class="block-item__text">
+        {{text}}
+      </p>
+    </div>
+
+    <div class="block-item__preview" cdkDrag cdkDragLockAxis="y" #movedBlock>
+      <p class="block-item__text" #moveText [@movedContent]="{value: isMoved, params: {top: topPosition}}">
+        {{text}}
+      </p>
+      <button class="block-item__btn" #btn cdkDragHandle (mousedown)="animate()">
+        #
+      </button>
+    </div>
+  </div>
+</div>

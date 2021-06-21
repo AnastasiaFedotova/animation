@@ -1,15 +1,12 @@
 .block {
-  margin: 0 auto;
-  width: 50vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   .block__item {
-    display: flex;
-    align-items: center;
+    position: relative;
     margin: 20px 0;
-    .block__text {
-      padding: 20px;
-      background-color: #c0e0fb;
-      border-radius: 4px;
-    }
+    width: 60%;
   }
 }
