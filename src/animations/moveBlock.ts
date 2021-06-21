@@ -34,15 +34,14 @@ export default [
             top: '{{top}}px',
             height: '100%',
             width: '100%',
-            fontSize: 'initial'
+            fontSize: '12px'
           }),
           style({
             zIndex: 3,
             opacity: 0.6,
             top: '{{top}}px',
             height: 'auto',
-            width: '60%',
-            fontSize: '9px'
+            width: '60%'
           }),
         ])
       )
@@ -56,8 +55,7 @@ export default [
             right: 0,
             opacity: 0.6,
             height: 'auto',
-            width: '60%',
-            fontSize: '9px'
+            width: '60%'
           }),
           style({
             zIndex: 0,
